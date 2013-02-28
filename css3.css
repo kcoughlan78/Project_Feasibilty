@@ -1,0 +1,115 @@
+body {
+font-size: 100%;
+color: white;
+background-color: #FDFFF7;
+font-family: verdana;
+}
+
+header h1 {
+margin: 10% 10% 10% 10%;
+display: block;
+background-color: #00CCCC;
+color: white;
+font-size: 400%;
+font-weight: 600;
+text-align: center;
+padding: 5% 5% 5% 5%;
+border-top-left-radius: 30% 30%;
+-moz-border-top-left-radius: 30% 30%;
+border-bottom-right-radius: 30% 30%;
+-moz-border-bottom-right-radius: 30% 30%;
+}
+
+nav {
+margin: 5% 10% 5% 10%;
+height: 200%;
+background-color: #120000;
+border-top-left-radius: 25% 25%;
+border-top-right-radius: 25% 25%;
+-moz-border-top-left-radius: 25% 25%;
+-moz-border-top-right-radius: 25% 25%;
+border-bottom-left-radius: 25% 25%;
+border-bottom-right-radius: 25% 25%;
+-moz-border-bottom-left-radius: 25% 25%;
+-moz-border-bottom-right-radius: 25% 25%;
+
+}
+
+nav ul {
+text-align: center;
+font: 90%;
+text-shadow: 1px 1px 1px #000
+}
+
+nav ul li {
+display: inline;
+list-style-type: none;
+text-shadow: 1px 1px 1px #000;
+}
+
+tfoot {
+	padding: 2px;
+}
+
+td {
+	padding: 2px;
+}
+
+section {
+margin: 10% 10% 10% 10%;
+padding: 5% 5% 5% 5%;
+/* below is general css3 border radius property for rounded edges */
+border-top-left-radius: 15% 15%;
+border-top-right-radius: 15% 15%;
+border-bottom-left-radius: 15% 15%;
+border-bottom-right-radius: 15% 15%;
+/* below ensures correct output for MFF*/
+-moz-border-top-left-radius: 15% 15%;
+-moz-border-top-right-radius: 15% 15%;
+-moz-border-bottom-left-radius: 15% 15%;
+-moz-border-bottom-right-radius: 15% 15%;
+/* below is for safari */
+-webkit-border-top-left-radius: 15% 15%;
+-webkit-border-top-right-radius: 15% 15%;
+-webkit-border-bottom-left-radius: 15% 15%;
+-webkit-border-bottom-right-radius: 15% 15%;
+background-color: #00CCCC;
+color: #FF7800;
+font-size: 90%
+}
+
+input {
+	position: absolute;
+	margin-left: 5%;
+	padding: 1px 1px 1px 1px;
+
+}
+
+
+input[type="button"] {
+	position: relative;
+	margin-left: 10%;
+}
+
+input[id="totalexp"] {
+	font-weight: 600;
+}
+input[id="minneeds"] {
+	font-weight: 600;
+}	
+
+input[id="sales"] {
+	font-weight: 600;
+} 
+
+input:focus {
+	border: 2px solid black;
+}
+
+input:invalid { background: pink url(invalid.png) no repeat center right;}
+
+footer {
+background-color: #00CCCC;	
+font-size: 60%;
+text-align: center;
+}

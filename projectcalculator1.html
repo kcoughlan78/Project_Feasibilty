@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="projectcalculation.js"></script>
+	<script type="text/javascript" src="totalexp.js"></script>
+	<link rel="stylesheet" type="text/css" href="css3.css" />
+	<title>Project Feasibilty</title>
+</head>
+
+<body>
+	<header><h1>How much do I need to sell?</h1></header>
+	<nav></nav>
+	<section>
+		<form id="startup" onsubmit="return false" >
+			<fieldset>
+				<legend>Project Feasiblity Calculator</legend>
+				<table>
+					<thead>
+						<th>Description</th><th>Monthly Amount (Euro)<th>
+					</thead>
+					<tfoot>
+						<tr><td><input type="button" name="Calculate" value="Calculate" onclick="calc();" /></td><td></td></tr>
+					</tfoot>
+					<tbody>
+			<tr><td><label>1. Minimum personal needs/Profit</label></td><td><input type="number" id="profit" placeholder="What you need to earn" required></td></tr>
+			<tr><td>2. Business Expenses</td><td></td></tr>
+			<tr><td>Transport</td><td></td></tr>
+			<tr><td><label>Van/car repayments</label></td><td><input type="number" id="motor" placeholder="Use loan calculators e.g. BOI/AIB"></td></tr>
+			<tr><td><label>Insurance</label></td><td><input type="number" id="insurance" placeholder="Use chill.ie for estimate"></td></tr>
+			<tr><td><label>Motor Tax</label></td><td><input type="number" id="motortax" placeholder="motortax.ie"></td></tr>
+			<tr><td><label>Fuel</label></td><td><input type="number" id="fuel" placeholder="add 20% to your estimate"></td></tr>
+			<tr><td><label>Maintenance &amp; Repairs</label></td><td><input type="number" id="repairs" placeholder="include NCT if required"></td></tr>
+			<tr><td>Equipment</td><td></td></tr>
+			<tr><td><label>Purchase Cost</label></td><td><input type="number" id="equipcost" placeholder="Consider cashflow"></td></tr>
+			<tr><td><label>Hire &amp; Lease</label></td><td><input type="number" id="equiphire" placeholder="Consider regularity of use"></td></tr>
+			<tr><td><label>Repairs</label></td><td><input type="number" id="equiprepairs" placeholder="Consider new vs secondhand cost difference"></td></tr>
+			<tr><td><label>Rent</label></td><td><input type="number" id="rent" placeholder="daft.ie"></td></tr>
+			<tr><td><label>Rates &amp; Service Charges</label></td><td><input type="number" id="rates" placeholder="Ask serviced offices"></td></tr>
+			<tr><td><label>Fixtures &amp; Fittings</label></td><td><input type="number" id="fixtures" placeholder="viking.ie"></td></tr>
+			<br />
+			<tr><td><label>Advertising &amp; Promotion</label></td><td><input type="number" id="ads" placeholder="adworld.ie/"></td></tr>
+			<tr><td><label>Loan Repayments</label></td><td><input type="number" id="loan" placeholder="BOI/AIB Calculators"></td></tr>
+			<tr><td><label>Legal Fees</label></td><td><input type="number" id="legal" placeholder="Check all free advice before paying"></td></tr>
+			<tr><td><label>Accountant Fee</label></td><td><input type="number" id="accountant" placeholder="Well maintained a/cs reduce costs" ></td></tr>
+			<tr><td><label>Employee Wages</label></td><td><input type="number" id="wages" placeholder="think hours needed not people"></td></tr>
+			<tr><td><label>Employer's PRSI</label></td><td><input type="number" id="eprsi" placeholder="10% depends on above"></td></tr>
+			<tr><td><label>Materials</label></td><td><input type="number" id="materials" placeholder="depends on your business type"></td></tr>
+			<tr><td><label>Light &amp; Heat</label></td><td><input type="number" id="lightandheat" placeholder="Working from home saves money"></td></tr>
+			<tr><td><label>Phone/Broadband</label></td><td><input type="number" id="pbroad" placeholder="How importnat is internet speed to you?"></td></tr>
+			<tr><td><label>Mobile Phone</label></td><td><input type="number" id="mobile" placeholder="Bill pay is better for business"></td></tr>
+			<tr><td><label>Website Design &amp; Maintenance</label></td><td><input type="number" id="webdesign" placeholder="How web dependant is your business"></td></tr>
+			<tr><td><label>Web Hosting</label></td><td><input type="number" id="webhosting" placeholder="Blacknight.ie for estimates"></td></tr>
+			<tr><td><label>Postage/Stationary/Office Supplies</label></td><td><input type="number" id="pso" placeholder="Send emails where possible"></td></tr>
+			<tr><td><label>Public Liability Insurance</label></td><td><input type="number" id="publia"></td></tr>
+			<tr><td><label>Other Expenses</label></td><td><input type="number" id="misc"></td></tr>
+			<tr><td><label>Total Expenses</label></td><td><input type="number" id="totalexp" placeholder="Total no entry req'd" readonly></td></tr>
+			<tr><td><label>Total Income Tax</label></td><td><input type="number" id="totaltax"></td></tr>
+			<tr><td><label>Total Income required to meet minimum needs</label></td><td><input type="number" id="minneeds" readonly></td></tr>
+			<tr><td><label>Price per unit</label></td><td><input type="number" id="priceperunit" placeholder="Requires some market research" required></td></tr>
+			<tr><td><label>Required sales per week</label></td><td><input type="number" id="sales" placeholder="No entry" readonly></td></tr>
+			</tbody>
+			</table>
+			</fieldset>
+		</form>
+	</section>
+	<footer>Copyright Kieran Coughlan (2013)</footer>
+</body>
+
+</html> 

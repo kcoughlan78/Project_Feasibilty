@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="projectcalculation.js"></script>
+	<script type="text/javascript" src="totalexp.js"></script>
+	<link rel="stylesheet" type="text/css" href="css3.css" />
+	<title>Project Feasibilty</title>
+</head>
+
+<body>
+	<header><h1>How much do I need to sell?</h1></header>
+	<nav></nav>
+	<section>
+		<form id="startup" onsubmit="return false" >
+			<fieldset>
+				<legend>Project Feasiblity Calculator</legend>
+			<h3><label>1. Minimum personal needs/Profit</label><input type="number" id="profit" required></h3>
+			<h3>2. Business Expenses</h3>
+			<h4>Transport</h4>
+			<p><label>Van/car repayments</label><input type="number" id="motor"></p>
+			<p><label>Insurance</label><input type="number" id="insurance"></p>
+			<p><label>Motor Tax</label><input type="number" id="motortax"></p>
+			<p><label>Fuel</label><input type="number" id="fuel"></p>
+			<p><label>Maintenance &amp; Repairs</label><input type="number" id="repairs"></p>
+			<h4>Equipment</h4>
+			<p><label>Purchase Cost</label><input type="number" id="equipcost"></p>
+			<p><label>Hire &amp; Lease</label><input type="number" id="equiphire"></p>
+			<p><label>Repairs</label><input type="number" id="equiprepairs"></p>
+			<br />
+			<p><label>Rent</label><input type="number" id="rent"></p>
+			<p><label>Rates &amp; Service Charges</label><input type="number" id="rates"></p>	
+			<p><label>Fixtures &amp; Fittings</label><input type="number" id="fixtures"></p>
+			<br />
+			<p><label>Advertising &amp; Promotion</label><input type="number" id="ads"></p>
+			<p><label>Loan Repayments</label><input type="number" id="loan"></p>
+			<p><label>Legal Fees</label><input type="number" id="legal"></p>
+			<p><label>Accountant Fee</label><input type="number" id="accountant"></p>
+			<p><label>Employee Wages</label><input type="number" id="wages"></p>
+			<p><label>Employer's PRSI</label><input type="number" id="eprsi"></p>
+			<p><label>Materials</label><input type="number" id="materials"></p>
+			<p><label>Light &amp; Heat</label><input type="number" id="lightandheat"></p>
+			<p><label>Phone/Broadband</label><input type="number" id="pbroad"></p>
+			<p><label>Mobile Phone</label><input type="number" id="mobile"></p>
+			<p><label>Website Design &amp; Maintenance</label><input type="number" id="webdesign"></p>
+			<p><label>Web Hosting</label><input type="number" id="webhosting"></p>
+			<p><label>Postage/Stationary/Office Supplies</label><input type="number" id="pso"></p>
+			<p><label>Public Liability Insurance</label><input type="number" id="publia"></p>
+			<p><label>Other Expenses</label><input type="number" id="misc"></p>
+			<h3><label>Total Expenses</label><input type="number" id="totalexp" readonly></h3>
+			<h3><label>Total Income Tax</label><input type="number" id="totaltax"></h3>
+			<h2><label>Total Income required to meet minimum needs</label><input type="number" id="minneeds" readonly></h2>
+			<h3><label>Price per unit</label><input type="number" id="priceperunit" required></h3>
+			<h2><label>Required sales per week</label><input type="number" id="sales"></h3>
+			<p><input type="button" name="Calculate" value="Calculate" onclick="calc();" /> <input type="button" name="reset" value="Start Over" /></p>
+
+			</fieldset>
+		</form>
+	</section>
+	<footer></footer>
+</body>
+
+</html> 
