@@ -108,6 +108,16 @@ input:focus {
 
 input:invalid { background: pink url(invalid.png) no repeat center right;}
 
+.mybutton {
+	background: linear-gradients(#2876b2,#549ad0);
+	background-size: 100% 200%;
+	transition: background-position .5s linear;
+}
+
+.mybutton:hover, .button:focus {
+	 background-position: 0 -102%;
+}
+
 footer {
 background-color: #00CCCC;	
 font-size: 60%;
